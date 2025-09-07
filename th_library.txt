@@ -752,8 +752,8 @@ do
                 end
 
                 ContextMenu.Container.Size = UDim2.fromOffset(
-                    menuWidth + 24,
-                    ContextMenu.Inner.Layout.AbsoluteContentSize.Y + 4
+                    menuWidth + 8, + 100
+                    ContextMenu.Inner.Layout.AbsoluteContentSize.Y + 4 + 200
                 )
             end
 
@@ -3833,3 +3833,4 @@ Players.PlayerRemoving:Connect(OnPlayerChange);
 -- literally just to pass detections
 
 return Library, Toggles, Options
+
