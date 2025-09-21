@@ -152,7 +152,7 @@ function Library:CreateLabel(Properties, IsHud)
         BackgroundTransparency = 1;
         FontFace = Library.Font;
         TextColor3 = Library.FontColor;
-        TextSize = 10;
+        TextSize = 12;
         TextStrokeTransparency = 0;
     });
 
@@ -752,8 +752,8 @@ do
                 end
 
                 ContextMenu.Container.Size = UDim2.fromOffset(
-                    menuWidth + 8, + 100
-                    ContextMenu.Inner.Layout.AbsoluteContentSize.Y + 4 + 200
+                    menuWidth + 8,
+                    ContextMenu.Inner.Layout.AbsoluteContentSize.Y + 4
                 )
             end
 
@@ -3831,6 +3831,4 @@ Players.PlayerAdded:Connect(OnPlayerChange);
 Players.PlayerRemoving:Connect(OnPlayerChange);
 
 -- literally just to pass detections
-
 return Library, Toggles, Options
-
